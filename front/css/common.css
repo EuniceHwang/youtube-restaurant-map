@@ -1,0 +1,336 @@
+@font-face {
+  font-family: "LINESeedKR-Bd";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/LINESeedKR-Bd.woff2")
+    format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "TTTtangsbudaejjigaeB";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2212@1.0/TTTtangsbudaejjigaeB.woff2")
+    format("woff2");
+  font-weight: 500;
+  font-style: normal;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+  font-family: "LINESeedKR-Bd";
+}
+
+.nav-container {
+  padding: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-container img {
+  width: 268px;
+  height: 237px;
+  margin: 20px;
+}
+
+.nav-title {
+  font-size: 4rem;
+  margin: 5px;
+  font-family: "TTTtangsbudaejjigaeB";
+}
+.nav-title a {
+  color: #000000;
+}
+.nav-contact {
+  font-size: 2.5rem;
+  border: 0;
+  background: none;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.category-list {
+  display: flex;
+  flex-wrap: wrap;
+  height: 500px;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+}
+
+.hidden {
+  display: none;
+}
+
+.category-item {
+  width: 23%;
+  height: 200px;
+  margin: 0 10px;
+  background-image: url("../images/test_bg.png");
+  border: none;
+  font-family: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  color: #fff;
+  font-size: 2rem;
+  border-radius: 10px;
+}
+
+#bread {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.227), rgba(0, 0, 0, 0.2)),
+    url("../images/bread.png");
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+#coding {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.227), rgba(0, 0, 0, 0.2)),
+    url("../images/coding.png");
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+#chicken {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.227), rgba(0, 0, 0, 0.2)),
+    url("../images/chicken.png");
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+#ttek {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.227), rgba(0, 0, 0, 0.2)),
+    url("../images/ttek.png");
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+#spicy {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.227), rgba(0, 0, 0, 0.2)),
+    url("../images/spicy.png");
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+#wine {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.427), rgba(0, 0, 0, 0.4)),
+    url("../images/wine.png");
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+#kukbob {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.227), rgba(0, 0, 0, 0.2)),
+    url("../images/kukbob.png");
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+#stake {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.227), rgba(0, 0, 0, 0.2)),
+    url("../images/stake.png");
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.category-item:hover {
+  transform: scale(0.95);
+}
+
+.category-item span:hover {
+  cursor: pointer;
+}
+
+.inner {
+  flex-grow: 1;
+  height: 500px;
+}
+
+@media all and (min-width: 1024px) {
+  .inner {
+    max-width: 1024px;
+    margin: 0 auto;
+  }
+}
+
+@media all and (max-width: 1024px) {
+  .category-item {
+    width: 100px;
+    transform: scale(0.7);
+    border-bottom: 0;
+  }
+  .category-item img {
+    transform: scale(0.6);
+    border-bottom: 0;
+  }
+  .category-item span {
+    font-size: 1.2rem;
+  }
+}
+
+body {
+  height: 180vh;
+  overflow-y: scroll;
+}
+
+nav {
+  height: 400px;
+}
+
+main {
+  padding-top: 1.5rem;
+  height: calc(100% - 400px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#map {
+  width: 100%;
+  height: 500px;
+  margin-bottom: 20px;
+}
+
+/* 회원용/비회원용 헤더 설정 */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-button {
+  font-family: inherit;
+  font-size: 2.5rem;
+  border: none;
+  background: none;
+}
+
+/* 로그인 버튼 기본값: 숨김처리 */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  width: 100%;
+}
+
+.dropdown-content button {
+  display: block;
+  font-size: 2rem;
+  font-family: inherit;
+  width: 100%;
+  border: none;
+}
+
+.dropdown-content button:hover {
+  color: white;
+  background-color: #606060;
+}
+
+/* 호버시 로그아웃 버튼 보이도록 설정 */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.hidden {
+  display: none;
+}
+
+/*  */
+
+.sign-container {
+  font-size: 2.5rem;
+  border: 0;
+  background: none;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+/* 텍스트 스타일 */
+a {
+  text-decoration: none;
+}
+
+/* 버튼 스타일 */
+.category-title {
+  padding: 10px;
+  border: none;
+  font-size: 2rem;
+  color: #4aa8d8;
+  background: #fff;
+  text-align: center;
+  width: 350px;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.category-title:hover {
+  transform: scale(0.95);
+}
+.category-title img {
+  margin-top: 5px;
+  width: 20px;
+  height: 20px;
+}
+.signin {
+  background: #4aa8d8;
+  border: none;
+  position: relative;
+  border-radius: 30px;
+  height: 45px;
+  font-size: 1.7rem;
+  padding: 0 2rem;
+  cursor: pointer;
+  transition: 800ms ease all;
+  outline: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin: 4px;
+}
+
+.signin a {
+  color: #fff;
+}
+
+.signin:hover {
+  background: #fff;
+  color: #4aa8d8;
+}
+
+.signin:hover a {
+  color: #4aa8d8;
+}
+
+.signin:before,
+.signin:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 2px;
+  width: 0;
+  background: #4aa8d8;
+  transition: 400ms ease all;
+}
+.signin:after {
+  right: inherit;
+  top: inherit;
+  left: 0;
+  bottom: 0;
+}
+.signin:hover:before,
+.signin:hover:after {
+  width: 100%;
+  transition: 800ms ease all;
+}
+
+/* 열혈 큐레이션 */
+
+#category {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 1.5rem;
+}
+
+.category-container {
+  width: 100%;
+  max-width: 1024px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+}
+
+.foot {
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 100;
+}

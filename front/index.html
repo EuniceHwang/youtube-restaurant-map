@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>맛슐랭</title>
+    <meta name="황다현" content="포트폴리오" />
+    <meta name="맛슐랭" content="유튜브맛집지도" />
+    <meta name="keywords" content="유튜브맛집, 맛슐랭" />
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/map.css" />
+  </head>
+
+  <body>
+    <nav>
+      <div class="inner">
+        <div class="nav-container">
+          <img src="./images/logo_img.png" />
+          <h1 class="nav-title"><a href="index.html">맛슐랭</a></h1>
+
+          <div class="sign-container">
+            <!-- 비회원 -->
+            <div class="unsigned">
+              <button class="signin"><a href="signin.html">Log in</a></button>
+              <button class="signin"><a href="signup.html">Sign up</a></button>
+            </div>
+
+            <!-- 회원 -->
+            <div class="signed hidden">
+              <div class="dropdown">
+                <div class="dropdown-button">
+                  안녕하세요. <span class="nickname"></span>님.
+                </div>
+                <div class="dropdown-content">
+                  <button id="sign-out">로그아웃</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- 카테고리 -->
+    <main>
+      <section id="category">
+        <div class="inner">
+          <div class="category-container">
+            <button class="category-title">
+              지도 위의 마커를 클릭하여 보세요<img
+                src="./images/custom_marker.png"
+              />
+            </button>
+            <div class="category-list">
+              <button class="category-item" id="bread">
+                빵지순례 필수코스
+              </button>
+
+              <button class="category-item" id="coding">
+                코딩하기 좋은 카페
+              </button>
+
+              <button class="category-item" id="chicken">순삭 치킨 맛집</button>
+
+              <button class="category-item" id="ttek">떡볶이 최강자들</button>
+
+              <button class="category-item" id="spicy">최고의 마라맛집</button>
+
+              <button class="category-item" id="wine">
+                분위기 좋은 내추럴와인바
+              </button>
+
+              <button class="category-item" id="kukbob">
+                밥은 먹고 다니냐? 국밥
+              </button>
+
+              <button class="category-item" id="stake">맛성비 스테이크</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- 카카오지도 -->
+      <div id="map" class="inner"></div>
+    </main>
+    <footer class="foot">백엔드 개발자 지원자 황다현 포트폴리오입니다.</footer>
+    <script
+      type="text/javascript"
+      src="//dapi.kakao.com/v2/maps/sdk.js?appkey=3c7b39e86c499d8967e097ad3fd89053&libraries=services"
+    ></script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.4.0/axios.min.js"
+      integrity="sha512-uMtXmF28A2Ab/JJO2t/vYhlaa/3ahUOgj1Zf27M5rOo8/+fcTUVH0/E0ll68njmjrLqOBjXM3V9NiPFL5ywWPQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./js/map.js"></script>
+    <script src="./js/header.js"></script>
+  </body>
+</html>

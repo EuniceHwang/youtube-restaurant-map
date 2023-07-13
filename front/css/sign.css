@@ -1,0 +1,72 @@
+.signin-container {
+  width: 100%;
+  position: absolute;
+  top: 51%;
+  left: 50%;
+  /* 개체의 너비, 높이에 대한 비율 */
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.signin-container h2 {
+  font-size: 3.5rem;
+}
+
+.signin-form {
+  width: 90%;
+  max-width: 50rem;
+  margin: 2rem auto 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.signin-form input {
+  width: 100%;
+  font-size: 2rem;
+  line-height: 2;
+  border: 3px solid #606060;
+  margin-bottom: 1rem;
+  padding-left: 1rem;
+}
+
+#signin,
+input#signup {
+  padding-left: 0;
+  background: #4aa8d8;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+#signin:hover,
+input#signup:hover {
+  transform: scale(0.95);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.signup-container {
+  width: 100%;
+  text-align: center;
+}
+
+#signup {
+  display: block;
+  color: #ffffff;
+  font-size: 2rem;
+  text-decoration: none;
+  background-color: #4aa8d8;
+  padding: 8px;
+}
+
+#signup:hover {
+  transform: scale(0.95);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}

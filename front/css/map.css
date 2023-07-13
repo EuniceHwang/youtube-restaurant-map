@@ -1,0 +1,36 @@
+/* 인포윈도우 설정 */
+.infowindow {
+  width: 25rem;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: white;
+}
+
+.infowindow-img-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+.infowindow-img {
+  width: 100%;
+}
+
+.infowindow-title {
+  font-size: 2rem;
+}
+
+.infowindow-addres {
+  font-size: 1.6rem;
+}
+
+.infowindow-btn {
+  font-size: 1.6rem;
+  color: #4aa8d8;
+}
+
+.customoverlay {
+  background-color: #fff;
+  color: #000000;
+  font-size: 14px;
+  padding: 2px 2px 1px 2px;
+}
