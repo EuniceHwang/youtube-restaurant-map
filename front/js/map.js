@@ -11,9 +11,6 @@ var map = new kakao.maps.Map(container, options); //지도 생성 및 객체 리
 var zoomControl = new kakao.maps.ZoomControl();
 map.addControl(zoomControl, kakao.maps.ControlPosition.RIGHT);
 
-// 임시로 로컬서버 url설정
-let url = "http://127.0.0.1:3000";
-
 async function getDataSet(category) {
   let qs = category;
   if (!qs) {
