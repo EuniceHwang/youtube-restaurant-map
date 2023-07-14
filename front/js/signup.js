@@ -9,7 +9,7 @@
 
 */
 
-let url = "https://127.0.0.1:3001";
+let url = "https://www.youtubetasty.store:3001";
 
 const btnSignUp = document.querySelector("#signup");
 
