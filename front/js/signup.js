@@ -1,15 +1,6 @@
-/* 
-회원가입 API 연동
+//회원가입 API 연동
 
-1. #signup 클릭
-2. #userID, #password, nickname 값 확인 (정규표현식 확인)
-3. 회원가입 API 요청
-4. 요청이 성공적이지 않다면, alert message
-5. 요청이 성공하면, jwt를 localstorage에 저장하고 main page 이동
-
-*/
-
-let url = "https://www.youtubetasty.store:3001";
+let url = "https://www.youtubetasty.store";
 
 const btnSignUp = document.querySelector("#signup");
 
