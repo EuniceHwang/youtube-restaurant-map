@@ -11,7 +11,7 @@ async function signIn(event) {
   const userID = document.querySelector("#userID").value;
   const password = document.querySelector("#password").value;
 
-  // 2. #email, #password 값 확인 (두 값이 모두 입력 되어 있지 않으면 return)
+  // 2. #userID, #password 값 확인 (두 값이 모두 입력 되어 있지 않으면 return)
   if (!userID || !password) {
     return alert("회원 정보를 입력해주세요.");
   }
